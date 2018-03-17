@@ -1,16 +1,21 @@
 /*CSS file*/
+html, body {
+    height: 100%; /*For sticking the footer at the bottom of the page*/
+}
 
 body {
     background-image: url("../images/backgroundImg.png");
     font-family: Arial, Helvetica, sans-serif;
-    width:100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #outNav{
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px outset #cccccc;
+    border-bottom: 0.07em outset #cccccc;
 }
+
  .navbar, #content {
     position: relative;
     width:960px;
@@ -18,12 +23,6 @@ body {
     display:inline-block;
     top: 20%;
     left:20%;
-    height:auto;
-}
-
-.navbar {
-    /* border-bottom-color:blue;
-    border: 2px solid green; */
 }
 
 header h1 {
@@ -34,12 +33,12 @@ header h1 {
     color:#ffffff;
     background:#4aaaa5;
     float: left;
-    padding:2.5rem;
+    padding:1.2rem;
 }
 
 nav ul{
     float: right;
-    padding:2.5rem 0;
+    padding:1.2em 0;
 }
 
 nav li {
@@ -88,7 +87,8 @@ p {
     top:0px;
     left:0px;
     width: 100%;
-    padding:4rem 0;
+    padding:1rem 0;
+    flex: 1 0 auto; /*For sticking the footer at the bottom of the page*/
 }
 
 #content {
@@ -97,11 +97,25 @@ p {
     padding: 2em;
 }
 
+.portfolioImg {
+    float: left;
+    height: 200px;
+    width: 305px;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-right: 1.5em
+}
+
 #myImg {
     float: left;
     margin-right: 15px;
     width:130px;
     height:120px;
+}
+
+input, select, textarea {
+    margin-top: 1em;
+    margin-top: 1em;
 }
 
 footer {
@@ -112,10 +126,12 @@ footer {
     padding: 30px 0 10px 0;
     background-color: #585555;
     color: #ffffff;
+    font-size: 0.65em;
+    flex-shrink: 0; /*For sticking the footer at the bottom of the page*/
 }
 
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     display: block;
     clear: both;
-  }
+  } */
