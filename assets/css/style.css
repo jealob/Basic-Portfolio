@@ -1,5 +1,121 @@
 /*CSS file*/
 
 body {
-    background-image: url("")
+    background-image: url("../images/backgroundImg.png");
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
 }
+
+#outNav{
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px outset #cccccc;
+}
+ .navbar, #content {
+    position: relative;
+    width:960px;
+    background-color:#ffffff;
+    display:inline-block;
+    top: 20%;
+    left:20%;
+    height:auto;
+}
+
+.navbar {
+    /* border-bottom-color:blue;
+    border: 2px solid green; */
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:#ffffff;
+    background:#4aaaa5;
+    float: left;
+    padding:2.5rem;
+}
+
+nav ul{
+    float: right;
+    padding:2.5rem 0;
+}
+
+nav li {
+    display: inline-block;    
+}
+
+#border{
+    border-style: solid;
+    border-right-color:#f7eded;
+    border-left-color:#f7eded;
+    border-right-width:1px;
+    border-left-width:1px;
+    padding:0 20px 0 20px;
+}
+
+#rightPadding {
+    padding:0 20px 0 0;
+}
+
+#leftPadding {
+    padding:0 0 0 20px;
+}
+nav a {
+    text-decoration:none;
+    color:#777777;
+}
+
+hr {
+    width: 99%;
+    color:#dddddd;
+}
+
+p {
+    color: #777777;
+    line-height:1.5;
+}
+
+#content h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #4aaaa5;
+    font-size: 1.5em;
+}
+.container {
+    position:relative;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding:4rem 0;
+}
+
+#content {
+    /* margin:40px; */
+    border: 1px solid #dddddd;   
+    padding: 2em;
+}
+
+#myImg {
+    float: left;
+    margin-right: 15px;
+    width:130px;
+    height:120px;
+}
+
+footer {
+    border-top: 10px;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    background-color: #585555;
+    color: #ffffff;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
