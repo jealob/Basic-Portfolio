@@ -7,7 +7,6 @@
     <title>About Me</title>
     <link rel="stylesheet" type="text/css" media = "screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href = "assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/YOUR_PATH/favicon.ico"/>
 </head>
 <body>
     <div id ="outNav">
@@ -31,9 +30,9 @@
             <hr>
             <form>
                 Name <br>
-                <input type="text" name="name"><br>
+                <input type="text" name="name" placeholder="firstname lastname"><br>
                 Email <br>
-                <input type = "text" name = "email"><br>
+                <input type = "text" name = "email" placeholder="name@domainname.ext"><br>
                 What am I<br>
                 <select name="status">
                     <option value="selectOption">Select Options</option>
@@ -41,16 +40,15 @@
                     <option value="employer">Employer</option>
                 </select> <br>
                 Message <br>
-                <textarea name = "message" rows="6" cols="60">
-
+                <textarea name = "message" >
                 </textarea> <br>
                 <button type="button" name="submit">Submit</button>
             </form>
         </section>
     </div>
 
-    <footer id = "copyright">
-        <span id = "dark">Copyright &copy; 2018</span>
+    <footer>
+        <span>Copyright &copy; 2018</span>
     </footer>
 </body>
 </html>

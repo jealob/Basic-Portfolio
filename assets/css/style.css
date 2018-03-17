@@ -66,14 +66,15 @@ nav a {
     color:#777777;
 }
 
-hr {
-    width: 99%;
-    color:#dddddd;
+.container {
+    padding:0.75em 0;
+    flex: 1 0 auto; /*For sticking the footer at the bottom of the page*/
 }
 
-p {
-    color: #777777;
-    line-height:1.5;
+#content {
+    border: 1px solid #dddddd;   
+    padding: 1em;
+    position: relative;
 }
 
 #content h2 {
@@ -82,29 +83,82 @@ p {
     color: #4aaaa5;
     font-size: 1.5em;
 }
-.container {
-    position:relative;
-    top:0px;
-    left:0px;
-    width: 100%;
-    padding:1rem 0;
-    flex: 1 0 auto; /*For sticking the footer at the bottom of the page*/
+
+hr {
+    width: 99%;
+    color:#dddddd;
 }
 
-#content {
-    /* margin:40px; */
-    border: 1px solid #dddddd;   
-    padding: 2em;
+p {
+    color: #777777;
+    line-height:2;
 }
 
-.portfolioImg {
-    float: left;
-    height: 200px;
-    width: 305px;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-right: 1.5em
+.pro {
+    position: relative;
+    height: 600px;
 }
+
+.pro img {
+    /* float: left;
+    height: 200px; */
+    width: 250px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+ .Img1 {
+    position: absolute;
+    top:1%;
+    left:0%;
+ }
+
+ .Img2 {
+    position: absolute;
+    top:1%;
+    left:30%;
+ }
+
+ .Img3 {
+    position: absolute;
+    top:33%;
+    left:0%;
+ }
+
+ .Img4 {
+    position: absolute;
+    top:33%;
+    left:30%;
+ }
+
+ .Img5 {
+    position: absolute;
+    top:67%;
+    left:0%;
+ }
+
+ .pro a {
+    text-decoration:none;
+    color:#ffffff; 
+}
+
+.pro a:hover {
+    text-decoration:none;
+    color:#d0d0d0
+}
+
+ .pro h3 { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#4aaaa5;
+    position: absolute;
+    top: 140px; 
+    left: 0; 
+    width: 100%; 
+    padding: 0.5em 0;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+ }
 
 #myImg {
     float: left;
@@ -114,11 +168,27 @@ p {
 }
 
 input, select, textarea {
-    margin-top: 1em;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width:99%;
+}
+
+textarea {
+    height:200px;
+}
+
+button {
+    width: auto;
+    box-sizing: border-box;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    border:none;
+    height:2em;
+    width:6em;
 }
 
 footer {
+    width:100%;
     border-top: 10px;
     border-top-color: #4aaaa5;
     border-top-style: solid;
@@ -129,9 +199,3 @@ footer {
     font-size: 0.65em;
     flex-shrink: 0; /*For sticking the footer at the bottom of the page*/
 }
-
-/* .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-  } */
