@@ -2,54 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Contact | Alex Obaseki</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media = "screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href = "assets/css/style.css">
 </head>
 <body>
-    <div id ="outNav">
-        <div class = "navbar">
-            <header>
-                <a href = "#"><h1>Alexander Obaseki</h1></a>
-            </header>
+    <header id ="masterhead">
+        <div class="container">
+            <a href = "index.html" id="logo">Alex Obaseki</a>
             <nav>
-                <ul>
-                    <li id = "rightPadding"><a href ="index.html">About</a></li>
-                    <li id = "border"><a href="portfolio.html">Portfolio</a></li>
-                    <li id = "leftPadding"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> 
+                <a href ="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </div> 
-<!-- Container for content -->
-    <div class= "container">
-        <section id = "content">
-            <h2>Contact</h2>
-            <hr>
-            <form>
-                Name <br>
-                <input type="text" name="name" placeholder="firstname lastname"><br>
-                Email <br>
-                <input type = "text" name = "email" placeholder="name@domainname.ext"><br>
-                What am I<br>
-                <select name="status">
-                    <option value="selectOption">Select Options</option>
-                    <option value="developer">Developer</option>
-                    <option value="employer">Employer</option>
-                </select> <br>
-                Message <br>
-                <textarea name = "message" >
-                </textarea> <br>
-                <button type="button" name="submit">Submit</button>
+    </header>
+    <!-- Container for content -->
+    <!-- This div inherit properties of both "#main-container" id
+    and ".container" class  -->
+    <div id = "main-container" class="container">
+        <section class = "main-section">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="full name">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@gmail.com">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id = "message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
             </form>
-        </section>
-    </div>  
-    <!-- End of container -->
 
-    <footer>
-        <span>Copyright &copy; 2018</span>
-    </footer>
+        </section>
+    
+    </div>  
+    <!-- End of content -->
+    <div class="containter">
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+    </div>
 </body>
+
 </html>

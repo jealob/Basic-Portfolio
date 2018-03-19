@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
-    <link rel="stylesheet" type="text/css" media = "screen" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href = "assets/css/style.css">
+    <title>About Me | Alex Obaseki</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div id ="outNav">
-        <div class = "navbar">
-            <header>
-                <a href = "#"><h1>Alexander Obaseki</h1></a>
-            </header>
+    <header id ="masterhead">
+        <div class="container">
+            <a href = "index.html" id="logo">Alex Obaseki</a>
             <nav>
-                <ul>
-                    <li id = "rightPadding"><a href ="index.html">About</a></li>
-                    <li id = "border"><a href="portfolio.html">Portfolio</a></li>
-                    <li id = "leftPadding"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> 
+                <a href ="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </div>
-<!-- Container for content -->
-    <div class= "container">
-        <section id ="content">
-            <h2>About Me</h2>
-            <hr>
-            <img id = "myImg" src = "assets/images/author4.jpg" alt = "my picture">
-            <p>My name is Alexander Obaseki, currently a student at the University of Minnesota coding boot camp. I have been facsinated by technology since I was a kid, no since I was a baby. I remember wondering how cars moved around without visible electrical wires hanging out from their rear, then I also thought that will be a difficult and  convuluted arrangement to manage owning to the fact that quite a few people had cars in my neighborhood at the time. Children's thought right, I know.</p> <br>
+    </header>
+
+    <!-- Container for content -->
+    <!-- This div inherit properties of both "#main-container" id
+    and ".container" class  -->
+    <div id= "main-container" class="container">
+        <section class ="main-section">
+            <h1>About Me</h1>
+            <img  src = "assets/images/author4.jpg" class="auth-image" alt = "my picture">
+            <p>My name is Alex Obaseki, currently a student at the University of Minnesota coding boot camp. I have been facsinated by technology since I was a kid, no since I was a baby. I remember wondering how cars moved around without visible electrical wires hanging out from their rear, then I also thought that will be a difficult and  convuluted arrangement to manage owning to the fact that quite a few people had cars in my neighborhood at the time. Children's thought right, I know.</p> <br>
+            
             <p> I initially was interested in Petroleum Engineering(the biggest industry in my native Nigeria) and then Mechanical Engineering, however somehow I found myself enrolled for a Computer Engineering program(the only available associate degree at the time at college closest to me). Then I fell in love with computers after taking courses in Microprocessors and Microcomputers. Even without computers to play around with my interest in Information and Communication Technology remained as witted as when I first took those classes as teenager. I have an associate in Computer Engineering, Bachelors in Computer Science, and a Master of Engineering in Computer Software and Theory. I also studied some Chinese along the way from my time in China and I am happy and looking forward to adding this coding boot camp certification to my list of achievements.</p><br>
+            
             <p>I love traveling, though I haven't done much in that area, I would love to travel the world some day. I love learning, all sort of things, from Medicine, to Geography, to History (kind of jack of all trade and master of none).</p><br>
-            </section>
+        
+        </section>
+
     </div>
     <!-- End of container -->
-    <footer>
-        <span>Copyright &copy; 2018</span>
-    </footer>
+    
+    <div class="containter">
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+    </div>
 </body>
 </html>

@@ -2,60 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Portfolio | Alex Obaseki</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media = "screen" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href = "assets/css/style.css">
 </head>
     <body>
-        <div id ="outNav">
-            <div class = "navbar">
-                <header>
-                    <a href = "#"><h1>Alexander Obaseki</h1></a>
-                </header>
+        <header id ="masterhead">
+            <div class="container">
+                <a href = "index.html" id="logo">Alex Obaseki</a>
                 <nav>
-                    <ul>
-                        <li id = "rightPadding"><a href ="index.html">About</a></li>
-                        <li id = "border"><a href="portfolio.html">Portfolio</a></li>
-                        <li id = "leftPadding"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav> 
+                    <a href ="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
             </div>
-        </div>
-<!-- Container for content -->
-        <div class= "container">
-            <section id = "content">
-                <h2>Portfolio</h2>
-                <hr>
-                <div class = "pro">
-                    <div class ="image Img1">
-                        <img  src="assets/images/ubuntu.jpg" alt="Hangman">
-                        <h3 ><a href = "#">Linux &amp; Git</a></h3>
-                        </div>
-                        <div class ="image Img2">
-                            <img  src="assets/images/smart_phone.jpg" alt="RPG Game">
-                            <h3><a href = "#">Smart Phones</a></h3>
-                        </div>
-                        <div class ="image Img3">
-                            <img  src="assets/images/head_phones.jpg" alt="Trivia Game">
-                            <h3 ><a href = "#">Music</a></h3>
-                        </div>
-                        <div class ="image Img4">
-                            <img  src="assets/images/city.jpg" alt=" Rutgers Info Widget">
-                            <h3><a href = "#">Travels</a></h3>
-                        </div>
-                        <div class ="image Img5">
-                            <img  src="assets/images/hardware.jpg" alt="Rock Paper Scissor">
-                        <h3><a href = "#">Play Time</a></h3>
-                    </div>
+        </header>
+        <!-- Container for content -->
+        <!-- This div inherit properties of both "#main-container" id
+        and ".container" class  -->
+        <div id= "main-container" class="container">
+            <section class = "main-section">
+                <h1>Portfolio</h1>
+                <div class = "work">
+                    <img  src="assets/images/ubuntu.jpg" alt="Hangman">
+                    <a href = "#"><h3>Hangman</h3></a>
                 </div>
-                
+                <div class ="work">
+                    <img  src="assets/images/smart_phone.jpg" alt="RPG Game">
+                    <a href = "#"><h3>Smart Phones</h3></a>
+                </div>
+                <div class="work">
+                    <img  src="assets/images/head_phones.jpg" alt="Trivia Game">
+                    <a href = "#"><h3>Music</h3></a>
+                </div>
+                <div class="work">
+                    <img  src="assets/images/city.jpg" alt=" Rutgers Info Widget">
+                    <a href = "#"><h3>Travels</h3></a>
+                </div>
+                <div class="work">
+                    <img  src="assets/images/hardware.jpg" alt="Rock Paper Scissor">
+                    <a href = "#"><h3>Play Time</h3></a>
+                </div>
             </section>
         </div>
-    <!-- End of container -->
-        <footer>
-            <span>Copyright &copy; 2018</span>
-        </footer>
+        <!-- End of container -->
+        <div class="containter">
+            <footer>
+                Copyright &copy; 2018
+            </footer>
+        </div>
     </body>
 </html>
