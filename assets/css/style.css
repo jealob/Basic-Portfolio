@@ -9,9 +9,50 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* General */
+/* For sticky footer styling; code snippets from 
+https://css-tricks.com/snippets/css/sticky-footer/*/
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* End sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {    /*Change this function to swapping images in future*/
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* End hover styling */
+
+/* General styling */
 
 .container {
   width: 100%;
@@ -113,12 +154,38 @@ footer {
   height: 50px;
 }
 
-/* h2, h3 {
+/* Sidebar */
+.sidebar{
+  float:right;
+  width:100%;
+  max-width: 270px;
+  padding:30px;
+  margin-bottom:20px;
+  background:#fff;
+  border:1px solid #ddd;
+}
+
+h3, .sidebar h2 {
   padding-bottom:20px;
   margin:15px;
   line-height:22px;
+  text-align:  center;
   border-bottom: 2px solid #eee;
-} */
+}
+
+.sidebar a {
+  text-align:center;
+}
+.social {
+  width:32px;
+  height:32px;
+  margin-top:8px;
+  margin-right: 5px;
+}
+
+.social:last-child{
+  margin-right: 0;
+}
 
 /* Main */
 
@@ -132,13 +199,15 @@ footer {
 .main-section{
   float: left;
   width:100%;
-  max-width:960px;
+  max-width:650px;
   padding: 30px;
   margin: 0 0 40px;
   background:#fff;
   border: 1px solid #ddd;
 }
+
 /* Portfolio Page */
+
 .work {
   position: relative;
   float:left;
@@ -178,6 +247,7 @@ footer {
   margin-top: 10px;
   margin-right: 25px;
 }
+
 /* Contact Page */
 
 #contact-form  ul{
@@ -191,8 +261,7 @@ footer {
 label,
 input[type=text],
 input[type=email],
-textarea {
-  /*No other element block go beside it */
+textarea {/*No other element block go beside it */  
   display: block; 
   width: 100%;
 }
