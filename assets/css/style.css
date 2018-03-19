@@ -50,6 +50,11 @@ nav a:hover {
   opacity: 0.8;
 }
 
+.work h3:hover {
+  color: #fff;
+  background: #5e7f7e;
+}
+
 /* End hover styling */
 
 /* General styling */
@@ -154,7 +159,7 @@ footer {
   height: 50px;
 }
 
-/* Sidebar */
+/* Sidebar
 .sidebar{
   float:right;
   width:100%;
@@ -185,7 +190,7 @@ h3, .sidebar h2 {
 
 .social:last-child{
   margin-right: 0;
-}
+} */
 
 /* Main */
 
@@ -199,7 +204,7 @@ h3, .sidebar h2 {
 .main-section{
   float: left;
   width:100%;
-  max-width:650px;
+  max-width:960px;
   padding: 30px;
   margin: 0 0 40px;
   background:#fff;
@@ -214,6 +219,7 @@ h3, .sidebar h2 {
   width: 274px;
   margin: 20px 0 25px;
   overflow:auto;
+  /* width: 300px; */
 }
 
 .work:nth-child(even) {
@@ -228,6 +234,7 @@ h3, .sidebar h2 {
 
 .work h3{
   position: absolute;
+  /* left: 0; */
   bottom: 20px;
   width:100%;
   padding: 15px;
