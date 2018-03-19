@@ -12,24 +12,24 @@ body {
   margin: 0;
 }
 
-/* For sticky footer styling; code snippets from 
+/* For flex sticky footer styling; code snippets from 
 https://css-tricks.com/snippets/css/sticky-footer/*/
 
 html,
 body {
   height: 100%;
 }
-
-.wrapper {
-  height: auto !important;
-  height: 100%;
-  min-height: 100%;
-  margin: 0 auto -105px;
+  
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex: 1 0 auto;
 }
 
-footer,
-.push {
-  height: 105px;
+footer {
+  flex-shrink: 0;
 }
 
 /* End sticky footer styling */
